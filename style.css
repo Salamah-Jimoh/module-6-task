@@ -9,6 +9,9 @@ img{
     height:auto;
     max-width:100%;
 }
+video{
+    width:100%;
+}
 .banner{
     background-image: url('/banner.jpg');
     background-position: center top;
@@ -41,6 +44,10 @@ img{
     padding:.4rem .6rem;
     text-align: center;
     margin-top:-10px;
+    cursor:pointer;
+}
+.menu button:hover{
+    background-color: rgb(173, 14, 14);
 }
 .banner-text{
     display: flex;
@@ -77,6 +84,10 @@ h1{
     color:white;
     font-size: 27px;
     padding:1rem ;
+    cursor:pointer;
+}
+.button:hover{
+    background-color: rgb(173, 14, 14);
 }
 h1, h2, h3, h4, p{
 color:white
@@ -112,8 +123,6 @@ color:white
 }
 .faq{
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 .faq h2{
     margin-left:5rem;
@@ -167,4 +176,29 @@ color:white
 .box a{
    display:block;
    margin:1rem;
+}
+@media(max-width:768px){
+    .banner{
+        height:900px;
+    }
+    .enjoy, .download, .kids, .faq{
+        display:block;
+        
+    }  
+    .input input{
+        padding: .2rem 1rem;
+    } 
+    .ready-input input{
+        padding: .2rem 1rem;
+
+    }
+    video{
+        margin-top:2rem;
+    }
+   .card{
+  margin-left: 2rem;
+   }
+   .flex{
+    display:block;
+   }
 }
